@@ -49,7 +49,8 @@ ok(vaEligibility(normalize({ rating: 'none', combat: 'no' })).status === 'check'
 ok(vaEligibility(normalize({ rating: 'pending', combat: 'no' })).status === 'check', 'pending rating treated like none for enrollment');
 {
     const v = vaEligibility(normalize({ ...base, combat: 'yes' }));
-    ok(near(daysBetween(parseDate('2026-12-01'), v.windowEnd), 3653, 2), 'combat window ≈ 10 years from separation');
+    ok(iso(v.windowEnd) === '2036-12-01', 'combat window = exactly 10 calendar years from separation');
+    ok(iso(vaEligibility(normalize({ sepDate: '2018-06-18', combat: 'yes' })).windowEnd) === '2028-06-18', 'Zak: window closes June 18, 2028');
 }
 
 // --- CHAMPVA -------------------------------------------------------------

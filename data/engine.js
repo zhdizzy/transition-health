@@ -134,7 +134,8 @@ export function tampEligible(p) {
 
 export function vaEligibility(p) {
     const r = p.ratingNum;
-    const windowEnd = addDays(p.sep, Math.round(365.25 * WINDOWS.vaCombatEnrollYears));
+    // Ten calendar years from discharge (statute), not 3,653 days.
+    const sd = new Date(p.sep); const windowEnd = Date.UTC(sd.getUTCFullYear() + WINDOWS.vaCombatEnrollYears, sd.getUTCMonth(), sd.getUTCDate());
     if (r != null && r > 0) {
         const g = VA.groupByRating(r);
         const copays = r >= VA.noMedCopayAt ? 'none' : 'meds';
