@@ -28,7 +28,7 @@
 <script>
   // Capture arrival params BEFORE loadFromUrl's history.replaceState strips
   // them — the tour must never auto-run for share-link arrivals.
-  window.__thbArrivalHadParams = new URLSearchParams(location.search).toString().length > 0;
+  window.__thbArrivalHadParams = Array.from(new URLSearchParams(location.search).keys()).some(function(k){return !/^(utm_|fbclid$|gclid$|msclkid$|ttclid$|mc_)/.test(k);});
 </script>
 
 <script type="application/ld+json">
