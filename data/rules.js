@@ -206,7 +206,7 @@ export const FORMS = {
     tamp:     { id: 'milConnect', label: 'Confirm your TAMP eligibility shows in DEERS', where: 'milConnect / ID card office', url: 'https://www.tricare.mil/Plans/SpecialPrograms/TAMP' },
     chcbp:    { id: 'DD Form 2837', label: 'Apply for CHCBP', where: 'Humana Military (mail/online)', url: 'https://www.tricare.mil/Plans/SpecialPrograms/CHCBP' },
     va1010:   { id: 'VA Form 10-10EZ', label: 'Apply for VA health care', where: 'va.gov/health-care/apply', url: 'https://www.va.gov/health-care/apply-for-health-care-form-10-10ez/' },
-    champva:  { id: 'VA Form 10-10d', label: 'Apply for CHAMPVA for your family', where: 'VHA Office of Integrated Veteran Care', url: 'https://www.va.gov/health-care/family-caregiver-benefits/champva/' },
+    champva:  { id: 'VA Form 10-10d', label: 'Apply for CHAMPVA for your family', where: 'VHA Office of Community Care', url: 'https://www.va.gov/family-and-caregiver-benefits/health-and-disability/champva/' },
     trs:      { id: 'milConnect (BWE)', label: 'Enroll in TRICARE Reserve Select', where: 'Beneficiary Web Enrollment', url: 'https://www.tricare.mil/Plans/HealthPlans/TRS' },
     trr:      { id: 'milConnect (BWE)', label: 'Enroll in TRICARE Retired Reserve', where: 'Beneficiary Web Enrollment', url: 'https://www.tricare.mil/Plans/HealthPlans/TRR' },
     retiree:  { id: 'milConnect / regional contractor', label: 'Enroll in retiree TRICARE Select or Prime', where: 'East/West regional contractor', url: 'https://www.tricare.mil/LifeEvents/Retiring' },
@@ -240,7 +240,7 @@ export const OFFICIAL_LINKS = [
     { label: 'TRICARE Retired Reserve: enroll', url: 'https://www.tricare.mil/Plans/HealthPlans/TRR', when: ['trr'] },
     { label: 'Retiring: enroll in Prime or Select', url: 'https://www.tricare.mil/LifeEvents/Retiring', when: ['retireeSelect', 'retireePrime'] },
     { label: 'FEDVIP dental and vision (BENEFEDS)', url: 'https://www.benefeds.gov/', when: ['retireeSelect', 'retireePrime'] },
-    { label: 'CHAMPVA: apply for the family (VA Form 10-10d)', url: 'https://www.va.gov/health-care/family-caregiver-benefits/champva/', when: ['champva'] },
+    { label: 'CHAMPVA: apply for the family (VA Form 10-10d)', url: 'https://www.va.gov/family-and-caregiver-benefits/health-and-disability/champva/', when: ['champva'] },
     { label: 'VA dental care and VADIP (dental insurance for veterans and CHAMPVA families)', url: 'https://www.va.gov/health-care/about-va-health-benefits/dental-care/', when: ['always'] },
     { label: 'FEHB for federal employees (OPM)', url: 'https://www.opm.gov/healthcare-insurance/healthcare/', when: ['fehb'] },
 ];

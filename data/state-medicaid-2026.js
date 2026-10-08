@@ -54,7 +54,7 @@ export const FPL_2025 = {
   base48: 15650,
   perPerson48: 5500,
   AK: { base: 19550, perPerson: 6880 },
-  HI: { base: 17990, perPerson: 6325 },
+  HI: { base: 17990, perPerson: 6330 },
 };
 
 // 2026 HHS poverty guidelines (Federal Register document 2026-00755, published
@@ -179,7 +179,7 @@ export const STATE_MEDICAID = {
   OK: { name: 'Oklahoma', expansion: true, adultPctFpl: 138, childlessAdultsCovered: true, parentsPctFpl: 138, chipUpperPctFpl: 210, pregnancyPctFpl: 210, exchange: 'federal', exchangeUrl: HCG,
     notes: 'Expansion state (2020 ballot initiative; SoonerCare). Became a state-based exchange on the federal platform 5/1/2026 (run by the Oklahoma Insurance Department); residents keep enrolling on HealthCare.gov for plan years 2026 and 2027, with a full state exchange planned for the 2028 open enrollment. ' + HR1, sources: [...KFF, CMS_SBE, OK_OID, KFF_WORK_REQ] },
   OR: { name: 'Oregon', expansion: true, adultPctFpl: 138, childlessAdultsCovered: true, parentsPctFpl: 138, chipUpperPctFpl: 305, pregnancyPctFpl: 190, exchange: 'federal', exchangeUrl: HCG,
-    nextPlanYear: { planYear: 2027, exchange: 'state', exchangeUrl: 'https://www.explorehealthor.gov/', from: '2026-11-01' },
+    nextPlanYear: { planYear: 2027, exchange: 'state', exchangeUrl: 'https://healthcare.oregon.gov/explorehealth/pages/home.aspx', from: '2026-11-01' },
     notes: 'Expansion state (Oregon Health Plan); OHP Bridge Basic Health Program covers 138-200% FPL. For 2026 coverage Oregon is a state-based exchange on the federal platform (enroll on HealthCare.gov). Starting 11/1/2026, 2027 coverage is enrolled at the new state-run ExploreHealthOR.gov (per HealthCare.gov and the CMS transition list). ' + HR1, sources: [...KFF, CMS_SBE, HCG_STATE, KFF_WORK_REQ] },
   PA: { name: 'Pennsylvania', expansion: true, adultPctFpl: 138, childlessAdultsCovered: true, parentsPctFpl: 138, chipUpperPctFpl: 319, pregnancyPctFpl: 220, exchange: 'state', exchangeUrl: 'https://pennie.com/',
     notes: 'Expansion state. Pennie is the marketplace. ' + CHIP_PREMIUM + ' ' + HR1, sources: [...KFF, CMS_SBE, KFF_PREMIUMS, KFF_WORK_REQ] },
